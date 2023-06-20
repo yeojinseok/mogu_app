@@ -2,7 +2,7 @@ import React from 'react';
 import {GuestStackParamList} from '../../navigation/GuestStack';
 import {RouteProp} from '@react-navigation/native';
 import {useRoute} from '@react-navigation/native';
-import {Text} from 'react-native';
+import {Text, View} from 'react-native';
 
 type SignUpScreenRouteProp = RouteProp<GuestStackParamList, 'SignUp'>;
 
@@ -11,5 +11,15 @@ export default function SignUp() {
 
   const {name} = route.params;
 
-  return <Text>{name}</Text>;
+  return (
+    <View
+      style={{
+        backgroundColor: 'red',
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      <Text>{name}</Text>
+    </View>
+  );
 }

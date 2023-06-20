@@ -18,12 +18,12 @@ export default function GuestStack() {
       <Stack.Screen
         name="SignIn"
         component={SignIn}
-        options={{title: '로그인'}}
+        options={{headerShown: false}}
       />
       <Stack.Screen
         name="SignUp"
         component={SignUp}
-        options={{title: '회원가입'}}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
